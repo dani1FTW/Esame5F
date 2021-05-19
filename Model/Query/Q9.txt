@@ -1,0 +1,5 @@
+SELECT DISTINCT immobili.IdImmobili,immobili.superficie, immobili.vani,immobili.anno,immobili.prezzo, immobili.CodProprietari ,tipoimmobile.descrizione
+FROM tipoimmobile, immobili left JOIN dettagliannesso ON
+immobili.IdImmobili=dettagliannesso.codimmobile
+WHERE immobili.CodTipoImmobili = tipoimmobile.IdTipoImmobile AND
+dettagliannesso.codTipoAnnesso IS NULL

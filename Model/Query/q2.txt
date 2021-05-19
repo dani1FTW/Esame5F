@@ -1,0 +1,6 @@
+SELECT COUNT(*) AS TOTALE 
+FROM immobili,tipoimmobile, tipoannesso,dettagliannessi 
+WHERE immobili.IdImmobili=dettagliannessi.codimmobile AND
+dettagliannessi.codTipoAnnesso= tipoannesso.idTipoAnnesso AND
+immobili.CodTipoImmobili=tipoimmobile.idTipoImmobile AND
+tipoimmobile.descrizione="Villa"

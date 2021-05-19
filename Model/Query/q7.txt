@@ -1,0 +1,6 @@
+SELECT proprietari.Cognome, SUM(immobili.Vani) AS Vani
+FROM immobili,proprietari,tipoimmobile
+WHERE proprietari.IdProprietari=immobili.CodProprietari AND
+immobili.codTipoImmobili = tipoimmobile.idTipoImmobile AND
+tipoimmobile.descrizione='Appartamento'
+GROUP BY proprietari.Cognome

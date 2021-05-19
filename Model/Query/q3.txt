@@ -1,0 +1,4 @@
+SELECT SUM(immobili.superficie) AS TOT
+FROM immobili,proprietari
+WHERE proprietari.IdProprietari=immobili.CodProprietari AND
+proprietari.Cognome='$cognome'

@@ -1,0 +1,7 @@
+SELECT  proprietari.Cognome, tipoimmobile.descrizione AS immobile, tipoannesso.Descrizione AS annesso
+FROM tipoannesso,immobili,proprietari, tipoimmobile, dettagliannessi
+WHERE immobili.IdImmobili=dettagliannessi.codimmobile AND
+dettagliannessi.codTipoAnnesso=tipoannesso.idTipoAnnesso AND
+immobili.codTipoImmobili=tipoimmobile.idTipoImmobile AND
+tipoimmobile.descrizione="$descrizione" AND
+tipoannesso.Descrizione="Garage"

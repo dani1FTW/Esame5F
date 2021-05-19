@@ -1,0 +1,5 @@
+SELECT proprietari.Cognome, SUM(immobili.superficie) AS totale
+FROM immobili, proprietari
+WHERE proprietari.IdProprietari=immobili.CodProprietari
+GROUP BY proprietari.Cognome
+HAVING SUM(immobili.superficie)>="200"

@@ -1,0 +1,5 @@
+SELECT proprietari.Cognome, tipoimmobile.descrizione
+FROM immobili,proprietari,tipoimmobile
+WHERE immobili.CodProprietari=proprietari.IdProprietari AND
+tipoimmobile.idTipoImmobile=immobili.codTipoImmobili AND
+tipoimmobile.descrizione='$descrizione'

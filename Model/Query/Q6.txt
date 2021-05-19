@@ -1,0 +1,4 @@
+SELECT proprietari.Nome, immobili.anno
+FROM proprietari, immobili
+WHERE proprietari.IdProprietari=immobili.CodProprietari AND
+immobili.anno >"$anno"

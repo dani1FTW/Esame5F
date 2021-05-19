@@ -1,0 +1,4 @@
+SELECT COUNT(*) AS TOTALE
+FROM tipoannesso, dettagliannessi
+WHERE tipoannesso.idTipoAnnesso=dettagliannessi.codTipoAnnesso AND
+tipoannesso.Descrizione='garage'
