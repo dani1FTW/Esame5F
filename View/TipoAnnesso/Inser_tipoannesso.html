@@ -1,0 +1,40 @@
+<!-- Parte Bootstrap  -->
+<!doctype html>
+<html lang="it">
+  <head>
+    <!--  Per inserire le immagini  -->
+    <link rel="icon" href="../../src/img/icon.png" ">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Libreria di Bootstrap   -->
+    <link rel="stylesheet" href="../../src/css/bootstrap.min.css">
+    <title> Inserimento Annesso</title>
+  </head>
+    <body>
+      <!-- Container per centrare il contenuto    -->
+      <div class="container">
+        <!--  Per rendere la pagina Responsive  -->
+          <div class="col-6  col-md-4 col-lg-5 col-xl-4 col-xxl-5	 mt-5 mx-auto  ">
+              <h1 class="text-center mb-5"> Inserimento Annesso </h1>
+              <div class="form-group">
+                <form name="modulo"  method="get" action="../../controller/tipoannesso/inser_tipoannesso.php" >
+                <label class ="mb-3" >Descrizione</label>
+                <input type="text" class="form-control" name="descrizione" size="30"  placeholder="Inserisci la descrizione" required>
+            </div>
+            <div class="text-center">
+              <button type="submit" value="invia" class="btn btn-primary mt-3 text-center " required>Invia</button>
+              <div class="dropdown-divider "> </div>
+              <div class="rows">
+                <a class="btn btn-warning btn-md mt-3 mx-4" href="lista_tipoannesso.php">Torna Alla lista</a>
+               <a class="btn btn-danger btn-md mt-3 " href="../../index.php">Torna al menù principale</a>
+</div>
+            </div>
+            </form>
+          </div>
+       </div>
+    </body>
+    <!--  Librerie di Bootstrap per l'inserimento di Pop-up e altre varie cose di JavaScript  -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+</html>

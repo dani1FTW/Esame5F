@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+	  <link rel="stylesheet" href="../../src/css/bootstrap.min.css">
+		<link rel="icon" href="../../src/img/icon.png" >
+	  <title> Inserimento Proprietari</title>
+  </head>
+    <body >
+      <div class="col-7 col-md-6 col-lg-6 col-xl-6 col-xxl-7	 mt-5 mx-auto  ">	
+	        <h1 class="text-center mb-5"> Inserimento Proprietari </h1>
+            </div>
+            <div class="col-6  col-md-5 col-lg-4 col-xl-5 col-xxl-3	 mt-5 mx-auto  ">	
+              <div class="form-group">
+            <form name="modulo"  method="get" action="../../Controller/Proprietari/inser_proprietari.php" >
+            <label class ="mb-3" >Nome</label>
+            <input type="text" class="form-control" name="nome" size="20"  placeholder="Inserisci il nome" required>
+            <label class ="mt-3 mb-3" >Cognome</label>
+            <input type="text" class="form-control" name="cognome" size="20"  placeholder="Inserisci il cognome" required>
+          
+            <div class="text-center">
+              <button type="submit" value="invia" class="btn btn-primary mt-4 text-center " required>Invia</button>
+                <div class="dropdown-divider my-3"></div>
+                <div class="rows">
+                <a class="btn btn-warning btn-md mt-3 mx-4" href="lista_proprietari.php">Torna Alla lista</a>
+                <a class="btn btn-danger btn-md mt-3 mx-4 " href="../../index.php">Torna al menù principale</a>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+    
+	
+	
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"  ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+</html>
